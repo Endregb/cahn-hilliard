@@ -26,7 +26,7 @@ The simulation captures how initially mixed compositions evolve into distinct re
 *Figure 1: Stability region of the semi-implicit time integration scheme. The method is unconditionally stable for the linear term, allowing large time steps without introducing numerical instability.*
 
 ![Concentration profile over time](figures\CahnHilliard_RK_u2.gif)  
-*Figure 2: Time evolution of the concentration field $u(x,t)$. Small initial fluctuations grow and separate into distinct phases, illustrating spinodal decomposition driven by the Cahn–Hilliard equation.*
+*Figure 2: Time evolution of the concentration field u(x,t). Small initial fluctuations grow and separate into distinct phases, illustrating spinodal decomposition driven by the Cahn–Hilliard equation.*
 
 ---
 
@@ -53,7 +53,7 @@ The simulation captures how initially mixed compositions evolve into distinct re
 
 This was a **group project** in the course **TMA4320 Introduksjon til vitenskapelige beregninger** at NTNU (Spring 2025).
 
-The assignment, listed as *Project 3* in the course, is based on phase-field modeling of binary mixtures and emphasizes PDE discretization, numerical stability, and visualization.
+The assignment is based on phase-field modeling of binary mixtures and emphasizes PDE discretization, numerical stability, and visualization.
 
 Language: **Norwegian**
 
