@@ -1,7 +1,7 @@
 ## HTML Version
 You can view the HTML version of this notebook:
-- **Project Overview:** [index.html](https://endregb.github.io/cahn-hilliard-simulation/) – Interactive landing page with project details
-- **Full Simulation:** [cahn-hilliard-simulation.html](https://endregb.github.io/cahn-hilliard-simulation/cahn-hilliard-simulation.html) – Complete notebook with all code and results
+- **Project Overview:** [index.html](https://endregb.github.io/cahn-hilliard/) – Interactive landing page with project details
+- **Full Simulation:** [cahn-hilliard-simulation.html](https://endregb.github.io/cahn-hilliard/cahn-hilliard-simulation.html) – Complete notebook with all code and results
 
 # Cahn–Hilliard Phase Separation Simulation
 
@@ -22,10 +22,10 @@ The simulation captures how initially mixed compositions evolve into distinct re
 
 ## Key Results
 
-![Stability region](figures\stability-regions-theta.png)  
+![Stability region](figures/stability-regions-theta.png)  
 *Figure 1: Stability region of the semi-implicit time integration scheme. The method is unconditionally stable for the linear term, allowing large time steps without introducing numerical instability.*
 
-![Concentration profile over time](figures\CahnHilliard_RK_u2.gif)  
+![Concentration profile over time](figures/CahnHilliard_RK_u2.gif)  
 *Figure 2: Time evolution of the concentration field u(x,t). Small initial fluctuations grow and separate into distinct phases, illustrating spinodal decomposition driven by the Cahn–Hilliard equation.*
 
 ---
