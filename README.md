@@ -23,7 +23,7 @@ The simulation captures how initially mixed compositions evolve into distinct re
 ## Key Results
 
 ![Stability region](figures/stability-regions-theta.png)  
-*Figure 1: Stability region of the semi-implicit time integration scheme. The method is unconditionally stable for the linear term, allowing large time steps without introducing numerical instability.*
+*Figure 1: Stability regions of the θ-method. For θ < ½ the region is a bounded circle, so the stiff fourth-order term forces tiny time steps (forward Euler blew up). For θ ≥ ½ the method is A-stable, which allows large time steps.*
 
 ![Concentration profile over time](figures/CahnHilliard_RK_u2.gif)  
 *Figure 2: Time evolution of the concentration field u(x,t). Small initial fluctuations grow and separate into distinct phases, illustrating spinodal decomposition driven by the Cahn–Hilliard equation.*
@@ -32,9 +32,10 @@ The simulation captures how initially mixed compositions evolve into distinct re
 
 ## Methods
 
-- Spatial discretization using **finite differences**
-- **Periodic boundary conditions** in 1D
-- Time integration via **semi-implicit backward Euler** scheme
+- Spatial discretization in **2D** with a **pseudospectral (FFT) method**
+- **Periodic boundary conditions**
+- Time integration with the **θ-method** (forward Euler, Crank–Nicolson, backward Euler), with the nonlinear term treated explicitly and the stiff linear terms implicitly, plus a 2nd-order IMEX Runge–Kutta scheme
+- Verified with **manufactured solutions**: measured order 1 for backward Euler and 2 for Crank–Nicolson and the IMEX Runge–Kutta scheme
 - Fourier analysis to extract **dominant wavelength**
 - Simulated and visualized in Python using `matplotlib` and `numpy`
 
